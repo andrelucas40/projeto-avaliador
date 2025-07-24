@@ -1,11 +1,15 @@
-from models.produto import Produto
+from models.produto_model import ProdutoModel
 
 class ProdutoController:
     def __init__(self):
-        self.produto_model = Produto
+        self.produto_model = ProdutoModel()
 
-    def get_all_produtos(self):
-        return self.produto_model.get_all()
+    def cadastrar_produto(self, nome, descricao, preco):
+        if nome and preco:
+            self.produto_model.salvar_produto(nome, descricao, preco)
+            print(f"Produto {nome} cadastrado com sucesso!")
+        else:
+            print("Erro: dados inválidos.")
 
-    def add_produto(self, nome, descricao, preco, estoque):
-        self.produto_model.add(nome, descricao, preco, estoque)
+    def listar_produtos(self):
+        return self.produto_model.listar_produtos()
