@@ -1,4 +1,4 @@
-from app.models.database import get_db_connection
+from models.database import get_db_connection
 
 class Produto:
     def __init__(self, id=None, nome=None, descricao=None, preco=None, estoque=None):
