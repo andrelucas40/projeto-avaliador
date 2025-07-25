@@ -1,5 +1,4 @@
-from models.produto_model import ProdutoModel
-
+from app.models.produto_model import ProdutoModel
 class ProdutoController:
     def __init__(self):
         self.produto_model = ProdutoModel()

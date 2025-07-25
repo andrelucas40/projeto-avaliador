@@ -1,5 +1,5 @@
-from database.connection import conectar
-import _mysql_connector
+from app.database.connection import conectar
+import mysql.connector
 
 class ProdutoModel:
     def __init__(self):
