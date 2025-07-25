@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from controllers.produto_controller import ProdutoController
+from app.controllers.produto_controller import ProdutoController
 
 class MainView:
     def __init__(self, master):

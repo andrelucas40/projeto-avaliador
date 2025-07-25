@@ -1,5 +1,4 @@
 from database.connection import conectar
-import _mysql_connector
 
 class ClienteModel:
     def __init__(self):
